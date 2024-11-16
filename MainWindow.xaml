@@ -1,0 +1,71 @@
+﻿<Window x:Class="BC230200812.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BC230200812"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="378">
+    <Grid Margin="0,0,-9,-5">
+        <Grid.Background>
+            <SolidColorBrush Color="#E3D3E3" />
+        </Grid.Background>
+
+        <Rectangle Height="30" VerticalAlignment="Top" Fill="#93b2b9" />
+        <TextBlock Text="VU ID:  BC230200812"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Margin="0,5,0,0"
+                   Foreground="Black"
+                   FontWeight="Bold"/>
+        <Label Content="Enter Your Height"
+               HorizontalAlignment="Left"
+               Margin="24,98,0,0"
+               VerticalAlignment="Top" RenderTransformOrigin="0.708,2.428" Width="104"/>
+        <TextBox x:Name="txtHeight"
+                HorizontalAlignment="Left"
+                Height="25"
+                Margin="134,98,0,0"
+                TextWrapping="Wrap"
+                VerticalAlignment="Top"
+                Width="161"/>
+
+        <Label Content="Enter Your Weight"
+               HorizontalAlignment="Left"
+               Margin="28,131,0,0"
+               VerticalAlignment="Top" RenderTransformOrigin="0.522,0.079" Width="107"/>
+
+        <TextBox x:Name="txtWeight"
+                 Height="26"
+                 Margin="134,131,77,0"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"/>
+        <Button x:Name="btnCalculate"
+                Content="Calculate BMI"
+                HorizontalAlignment="Left"
+                Margin="130,214,0,0"
+                VerticalAlignment="Top"
+                Width="133"
+                Height="22"
+                Background="#93B2B9"
+                Foreground="Black"
+                Click="btnCalculate_Click" RenderTransformOrigin="0.75,0.568"/>
+        <Label Content="BMI"
+               HorizontalAlignment="Left"
+               Margin="112,482,0,0"
+               VerticalAlignment="Top"/>
+        <TextBox x:Name="txtBMI"
+                 HorizontalAlignment="Left"
+                 Height="23"
+                 Margin="92,263,0,0"
+                 TextWrapping="Wrap"
+                 VerticalAlignment="Top"
+                 Width="222"
+                 Background="#f3f991"
+                 IsReadOnly="True" TextChanged="txtBMI_TextChanged"/>
+        <Label Content="BMI"
+            HorizontalAlignment="Left"
+            Margin="48,263,0,0"
+            VerticalAlignment="Top" RenderTransformOrigin="0.708,2.428"/>
+    </Grid>
+</Window>
